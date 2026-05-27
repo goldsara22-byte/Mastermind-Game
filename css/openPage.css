@@ -1,0 +1,96 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background: #f0f8ff; /* צבע שמיים בהיר */
+    color: #333;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column; /* מיקום אנכי */
+}
+
+h1 {
+    font-size: 2vw; /* קטן יותר */
+    color: #ffffff;
+    background-color: #80deea; /* טורקיז בהיר */
+    padding: 2% 0;
+    width: 100%;
+    max-width: 320px; /* רוחב זהה לטופס */
+    text-align: center;
+    border-radius: 0.8rem 0.8rem 0 0; /* פינות מעוגלות למעלה */
+    margin-bottom: 2%; /* מרווח קטן בין הכותרת לטופס */
+}
+
+/* Form Styles */
+.registration-form {
+    background-color: #ffffff;
+    border-radius: 0.8rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 4% 5%;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    border: 1px solid #e0f7fa; /* גבול בהיר */
+}
+
+label {
+    font-size: 1.5vw; /* קטן יותר */
+    color: #5f6368;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 2.5% 3%;
+    margin: 1.5% 0 2% 0;
+    border: 1px solid #c8e6c9; /* צבע ירוק בהיר */
+    border-radius: 0.5rem;
+    background-color: #f1f9fc;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #80deea; /* גוון טורקיז */
+    outline: none;
+}
+
+button {
+    background-color: #80deea; /* טורקיז בהיר */
+    color: #fff;
+    padding: 2.5% 5%;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-shadow: 2px 2px 5px 1px #080808;
+}
+
+button:hover {
+    background-color: #4db6ac; /* טורקיז כהה */
+}
+
+a {
+    display: block;
+    margin-top: 2.5%;
+    font-size: 2vw;
+    color: #e57373; /* ורוד עתיק */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,173 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* וודא שהגוף תופס את כל הגובה */
+    text-align: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3e6;
+    color: #333;
+    background-image: url('flowers-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.instructions-container {
+    text-align: center;  /* מרכז את המלל בתוך הקונטיינר */
+    max-width: 800px;
+    margin: 0 auto;  /* ממורכז באופן אוטומטי */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3e6;
+    color: #333;
+    text-align: center;
+    background-image: url('flowers-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.instructions-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;  /* מרכז את המלל בתוך הקונטיינר */
+
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #FF7F50;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.instructions-content h2 {
+    font-size: 2em;
+    color: #6A5ACD;
+    margin-bottom: 20px;
+}
+
+.instructions-content p {
+    font-size: 1.3em;
+    color: #FF1493;
+    line-height: 1.6;
+    margin: 15px 0;
+    text-align: center;
+    align-items: center;
+}
+
+footer p {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #8A2BE2;
+}
+
+footer p::before {
+    content: "🎮 ";
+    font-size: 1.5em;
+}
+
+.instructions-container::before {
+    content: "🌸";
+    font-size: 3em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-30deg);
+}
+
+.instructions-container::after {
+    content: "🌷";
+    font-size: 3em;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(30deg);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .instructions-content h2 {
+        font-size: 1.8em;
+    }
+
+    .instructions-content p {
+        font-size: 1.1em;
+    }
+
+    footer p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .instructions-content h2 {
+        font-size: 1.5em;
+    }
+
+    .instructions-content p {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: white;
+    background-color: #FF6347;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transform: perspective(1px) translateZ(0);
+    transition: transform 0.3s, box-shadow 0.2s ease-in-out;
+}
+
+.start-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.start-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}

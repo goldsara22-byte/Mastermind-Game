@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ברוכים הבאים למשחק!</title>
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+
+<body>
+    <header>
+        <div id="savedPersonsContainer"></div>
+    </header>
+    <div class="grid-container">
+        <div class="curtain">
+            <div class="curtainTop"></div>
+            <div class="curtainMove">
+            </div>
+
+            <div class="personRandom" id="personRandom1">
+                <div class="areaeye">
+                    <img src="" alt="eye">
+                </div>
+                <div class="areamouth">
+                    <img src="" alt="mouth">
+                </div>
+                <div class="areashirt">
+                    <img src="" alt="shirt">
+                </div>
+                <div class="areapants">
+                    <img src="" alt="pants">
+                </div>
+            </div>
+
+
+        </div>
+  
+        <button id="finishPerson" class="finish-btn">
+            <span class="checkmark">✔️</span>
+          </button>
+          
+          
+        
+        <div class="person" id="person">
+
+            <div class="areaeye">
+                <div id="eye11">
+                    <img src="../photos/eye1.png" alt="eye">
+                </div>
+                <div id="eye22">
+                    <img src="../photos/eye2.png" alt="eye">
+                </div>
+                <div id="eye33">
+                    <img src="../photos/eye3.png" alt="eye">
+                </div>
+                <div id="eye44">
+                    <img src="../photos/eye4.png" alt="eye">
+                </div>
+            </div>
+
+            <div class="areamouth">
+                <div id="mouth11">
+                    <img src="../photos/mouth1.png" alt="mouth">
+                </div>
+                <div id="mouth22">
+                    <img src="../photos/mouth2.png" alt="mouth">
+                </div>
+                <div id="mouth33">
+                    <img src="../photos/mouth3.png" alt="mouth">
+                </div>
+                <div id="mouth44">
+                    <img src="../photos/mouth4.png" alt="mouth">
+                </div>
+            </div>
+
+            <div class="areashirt">
+                <div id="shirt11">
+                    <img src="../photos/shirt1.png" alt="shirt">
+                </div>
+                <div id="shirt22">
+                    <img src="../photos/shirt2.png" alt="shirt">
+                </div>
+                <div id="shirt33">
+                    <img src="../photos/shirt3.png" alt="shirt">
+                </div>
+                <div id="shirt44">
+                    <img src="../photos/shirt4.png" alt="shirt">
+                </div>
+            </div>
+
+            <div class="areapants">
+                <div id="pants11">
+                    <img src="../photos/pants1.png" alt="pants">
+                </div>
+                <div id="pants22">
+                    <img src="../photos/pants2.png" alt="pants">
+                </div>
+                <div id="pants33">
+                    <img src="../photos/pants3.png" alt="pants">
+                </div>
+                <div id="pants44">
+                    <img src="../photos/pants4.png" alt="pants">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="closet">
+            <div class="madaf">
+                <div class="eyes" id="eye1">
+                    <img src="../photos/eye1.png" alt="eye">
+                </div>
+                <div class="eyes" id="eye2">
+                    <img src="../photos/eye2.png" alt="eye">
+                </div>
+                <div class="eyes" id="eye3">
+                    <img src="../photos/eye3.png" alt="eye">
+                </div>
+                <div class="eyes" id="eye4">
+                    <img src="../photos/eye4.png" alt="eye">
+                </div>
+            </div>
+            <div class="madaf">
+                <div class="mouth" id="mouth1">
+                    <img src="../photos/mouth1.png" alt="mouth">
+                </div>
+                <div class="mouth" id="mouth2">
+                    <img src="../photos/mouth2.png" alt="mouth">
+                </div>
+                <div class="mouth" id="mouth3">
+                    <img src="../photos/mouth3.png" alt="mouth">
+                </div>
+                <div class="mouth" id="mouth4">
+                    <img src="../photos/mouth4.png" alt="mouth">
+                </div>
+            </div>
+            <div class="madaf">
+                <div class="shirt" id="shirt1">
+                    <img src="../photos/shirt1.png" alt="shirt">
+                </div>
+                <div class="shirt" id="shirt2">
+                    <img src="../photos/shirt2.png" alt="shirt">
+                </div>
+                <div class="shirt" id="shirt3">
+                    <img src="../photos/shirt3.png" alt="shirt">
+                </div>
+                <div class="shirt" id="shirt4">
+                    <img src="../photos/shirt4.png" alt="shirt">
+                </div>
+            </div>
+            <div class="madaf">
+                <div class="pants" id="pants1">
+                    <img src="../photos/pants1.png" alt="pants">
+                </div>
+                <div class="pants" id="pants2">
+                    <img src="../photos/pants2.png" alt="pants">
+                </div>
+                <div class="pants" id="pants3">
+                    <img src="../photos/pants3.png" alt="pants">
+                </div>
+                <div class="pants" id="pants4">
+                    <img src="../photos/pants4.png" alt="pants">
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <a href="../html/choosGame.html" id="back">back</a>
+    <a href="../html/rules.html" id="rules">הוראות</a>
+
+
+
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <p>!נגמרו הניסיונות למשחק זה</p>
+            <button id="restartGame1">התחל מחדש</button><br><br><br>
+            <a href="../html/choosGame.html">חזרה למסך הבית</a>
+        </div>>
+    </div>
+
+    <div id="gameWinModal" class="modal">
+        <div class="modal-content">
+            <p>ניצחת!!!</p>
+            <button id="restartGame2">התחל   מחדש  </button><br><br><br>
+            <a href="../html/choosGame.html">חזרה למסך הבית</a>
+        </div>
+    </div>
+    <script src="../js/gameJs.js"></script>
+
+
+</body>
+
+</html>
